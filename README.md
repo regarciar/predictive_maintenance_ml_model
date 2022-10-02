@@ -1,10 +1,8 @@
-predictive_maintenance_ml_model
-==============================
+# predictive_maintenance_ml_model
 
 Machine learning model applied to failure prediction and remaining useful life estimation
 
-Project Organization
-------------
+## Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -51,7 +49,96 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
-
---------
+---
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+---
+
+<body>
+    <h2> <b> How to Run </b> </h2>
+    <p>
+    <ol>
+        <li> Clone this repository. </li>
+        <li> Execute the following instruccions inside of project root directory (predictive maintenance ml model folder
+        ). </li>
+        <li> Install/ update pip. </li>
+    </ol>
+    </p>
+</body>
+
+<b> On Windows </b>
+
+    To install
+        python get-pip.py
+    To upgrade
+        python -m pip install -U pip
+
+<b> On Linux </b>
+
+    To install
+        sudo apt-get install python-pip
+    To upgrade
+        sudo pip install -U pip
+
+<body>
+    <p>
+    <ol type="1" start="4">
+        <li> Install/ update virtualenv. </li>
+    </ol>
+    </p>
+</body>
+
+<b> On Windows </b>
+
+    To install
+        pip install virtualenv
+    To upgrade
+        pip install virtualenv --upgrade
+
+<b> On Linux </b>
+
+    To install
+        sudo pip3 install virtualenv
+    To upgrade
+        sudo pip3 install virtualenv --upgrade
+
+<body>
+    <p>
+    <ol type="1" start="5">
+        <li> Create virtual environment. </li>
+    </ol>
+    </p>
+</body>
+
+    python3 -m venv model_dependencies
+
+<body>
+    <p>
+    <ol type="1" start="6">
+        <li> Activate virtual enviroment. </li>
+    </ol>
+    </p>
+</body>
+
+    source model_dependencies/bin/activate
+
+<body>
+    <p>
+    <ol type="1" start="7">
+        <li> Install all projects dependencies. </li>
+    </ol>
+    </p>
+</body>
+
+    pip install --default-timeout=100 future -r requirements.txt
+
+<body>
+    <p>
+    <ol type="1" start="8">
+        <li> Deactivate virtual enviroment. </li>
+    </ol>
+    </p>
+</body>
+
+    deactivate
